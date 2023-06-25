@@ -8,17 +8,15 @@
     "helpers:pinGitHubActionDigests",
     "schedule:weekends",
     ":automergePatch",
-    ":automergePr"
+    ":automergePr",
+    ":automergeDigest",
+    "docker:pinDigests"
   ],
   "platformAutomerge": true,
   "ansible": {
     "fileMatch": [
       "(^|/)tasks/[^/]+\\.ya?ml$",
       "docker-compose\\.ya?ml(\\.j2)?$"
-    ],
-    "digest": {
-      "enabled": true
-    },
-    "enabled": true
+    ]
   }
 }
