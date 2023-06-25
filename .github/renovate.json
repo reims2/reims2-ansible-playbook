@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":dependencyDashboard",
+    ":prHourlyLimitNone",
+    ":separateMajorReleases",
+    "helpers:pinGitHubActionDigests",
+    "schedule:weekends",
+    ":automergePatch",
+    ":automergePr"
+  ],
+  "platformAutomerge": true,
+  "ansible": {
+    "fileMatch": [
+      "(^|/)tasks/[^/]+\\.ya?ml$",
+      "[^/]+docker-compose\\.ya?ml(\\.j2)?$"
+    ]
+  }
+}
