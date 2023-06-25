@@ -14,7 +14,8 @@
   "ansible": {
     "fileMatch": [
       "(^|/)tasks/[^/]+\\.ya?ml$",
-      "[^/]+docker-compose\\.ya?ml(\\.j2)?$"
-    ]
+      "docker-compose\\.ya?ml(\\.j2)?$"
+    ],
+    "enabled": true
   }
 }
