@@ -16,6 +16,9 @@
       "(^|/)tasks/[^/]+\\.ya?ml$",
       "docker-compose\\.ya?ml(\\.j2)?$"
     ],
+    "digest": {
+      "enabled": true
+    },
     "enabled": true
   }
 }
